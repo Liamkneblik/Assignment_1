@@ -49,7 +49,7 @@ main{
 footer{
     background-color:#dfbcb8;
     grid-column: 1 / -1;
-    grid-row: 3 / ;
+    grid-row: 3 / 4;
 }
 h3{
     display: flex;
@@ -66,12 +66,13 @@ h3{
     border: none;
     color: white;
     padding: 15px;
-    margin: 10px;
+    margin: 10px; 
     margin-top: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
-
+    transition-duration: 0.4s;
+    outline: none;
 }
 .top{
     grid-row: 1 / 2;
@@ -95,4 +96,24 @@ h3{
 }
 .Cancel{
     background-color:#d43b15;
+}
+
+.dark_theme{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    transition-duration: 0.4s;
+}
+.dark_theme .textarea{
+    background-color: rgb(71, 71, 71);
+}
+
+.light_theme{
+    background-color:#ece0cc;
+    color: rgb(56, 56, 56);
+}
+.dark_theme .Cancel{
+    background-color: #993f2f;
+}
+.dark_theme .NewNote, .dark_theme .Save{
+    background-color: #447456;
 }
