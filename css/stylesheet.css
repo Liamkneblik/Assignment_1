@@ -19,7 +19,7 @@ nav{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    
+    transition-duration: 0.4s;
 }
 main{
     background-color: #ece8e8;
@@ -27,7 +27,7 @@ main{
     grid-row: 2 / 3;
     padding: 10px;
     margin: 10px;
-
+    transition-duration: 0.4s;
     display: grid;
     grid-template-rows: 0.3fr 1fr 0.3fr ;
     
@@ -116,4 +116,25 @@ h3{
 }
 .dark_theme .NewNote, .dark_theme .Save{
     background-color: #447456;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        grid-template-rows: 0.5fr 0.8fr 2fr;
+    }
+    nav{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin-bottom: 0.2em;
+    }
+    main{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        margin-top: 0.1em;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    footer{
+        grid-row: 4 / 5;
+    }
 }
